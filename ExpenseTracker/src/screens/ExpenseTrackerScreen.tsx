@@ -1,12 +1,26 @@
-import React from "react";
-import { View, Text } from "react-native";
+// src/screens/ExpenseTrackerScreen.js
 
-const ExpenseTrackerScreen = () => {
+import React from "react";
+import { Button, StyleSheet, Text, View } from "react-native";
+
+export default function ExpenseTrackerScreen({ navigation }) {
   return (
-    <View>
-      <Text>Expense Tracker Screen</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Expense Tracker Screen</Text>
+      <Button title="Go Back" onPress={() => navigation.goBack()} />
     </View>
   );
-};
+}
 
-export default ExpenseTrackerScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+});

@@ -3,7 +3,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { ThemeProvider } from "styled-components/native";
-import theme from "./src/theme";
+import theme from "./src/theme/theme";
 import HomeScreen from "./src/screens/HomeScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import ExpenseTrackerScreen from "./src/screens/ExpenseTrackerScreen";
